@@ -80,9 +80,12 @@ void delay_ms(int miliSec)
 
 int main(void) {
     /* Insert DDR and PORT initializations */
-
+DDRC = 0xFF; PORTC = 0x00;
+DDRD = 0xFF; PORTD = 0x00;
+LCD_init();
+LCD_DisplayString(1, "Hello World");
     /* Insert your solution below */
-    while (1) {
+    while (1) {continue;
 
     }
     return 1;
